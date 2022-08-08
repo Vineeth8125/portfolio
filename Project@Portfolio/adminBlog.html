@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bsSRC/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">	
+     <style type="text/css">
+		body{
+			padding: 0px;
+			margin: 0px;
+			width: 100%;
+			background-color: #eef4f7;
+			/*background-color: #223c42;*/
+		}
+		#jk ul li{
+			margin-right: 20px;
+		}
+		.vid{
+			border: 1px solid black;
+			border-radius: 10px;
+			padding: 0px;
+		}
+		#jk ul li a{
+			color: #fff;
+		}
+		#jk ul li:hover{
+			background-color: white;
+			border-radius: 10px;
+			color: green;
+		}
+		#jk ul li:hover a{
+			color: green;
+		}
+		input::file-selector-button{
+			background-color: green;
+			border-radius: 10px;
+			height: 50px;
+			width: 200px;
+		}
+	</style>
+</head>
+<body>
+	<div style="width:100%;position: fixed;top: 0px;z-index: 2;" >
+		  <nav class="navbar navbar-expand-md" style="background-color:#223c42">
+		  		<a class="navbar-brand" href="#"><img style="margin-top: -10px;"  class="ms-2" src="rgukt.png" height="40px" width="30px"></a>
+		  		<button class="navbar-toggler" data-toggle="collapse" data-target="#jk"><span class="navbar-toggler-icon"></span></button>
+		  		<div class="collapse navbar-collapse justify-content-end" id="jk">
+			  		<ul class="navbar-nav" class="view overlay zoom">
+			  			<li class="nav-item"><a class="nav-link" href="admin-home.html">Home</a></li>
+			  			<li class="nav-item" ><a class="nav-link" href="admin-courses.html" >Courses</a></li>
+			  			<li class="nav-item"><a class="nav-link" href="#">Assignments</a></li>
+			  			<li class="nav-item" style="background-color: white;border-radius: 10px;"><a class="nav-link" href="adminBlog.html" style="color:green;">Admin-Blog</a></li>
+			  			<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+			  			<li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+			  		</ul>
+			  	</div>
+		  </nav>
+	 </div>
+	 <div class="container" style="height: 500px; width: 900px;background-color: darkcyan;margin: 100px auto;padding-top: 200px;">
+	 	<center><label for="f" class="h3 text-white" >Upload Your file:</label>
+	 	<input type="file" name="f" ></center>
+	 </div>
+</body>
+</html>
